@@ -1,0 +1,20 @@
+@media screen and (max-width: 768px) {
+
+    .nav01 {
+        position: fixed;
+        z-index: 3;
+    }
+    .logo01 {
+        padding: 1vh 5vw;
+    }
+    .hamburger {
+        display: block;
+        position: absolute;
+        cursor: pointer;
+        right: 5%;
+        top: 50%;
+        transform: translate(-5%, -50%);
+        z-index: 2;
+        transition: all 0.7s ease;
+    }
+}
