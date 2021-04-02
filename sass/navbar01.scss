@@ -3,6 +3,77 @@ body {
     background-color: grey;
 }
 
-.wraper {
-    border: 1px solid red;
+.nav01 {
+    background-color: black;
+    // border: 1px solid blue;
+    height: 4rem;
+    width: 100vw;
+    display: flex;
+    position: fixed;
+    z-index: 10;
+    font-weight: 300;
+    transition: 0.2s ease-in-out;
+
+    .logo01 {
+        padding: 1vh 2vw;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        color: #fff;
+        text-transform: uppercase;
+        width: 25rem;
+        font-weight: 800;
+    }
+
+    .hamburger {
+        display: none;
+
+        div {
+            width: 30px;
+            height: 3px;
+            background-color: #fff;
+            margin: 5px;
+            transition: all 0.3s ease;
+        }
+    }
+
+    .nav-links {
+        display: flex;
+        list-style: none;
+        width: 90vw;
+        padding-right: 2vw;
+        justify-content: flex-end;
+        align-items: center;
+
+        li {
+            position: relative;
+        }
+
+        a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 1.7vw;
+            font-family: sans-serif;
+        }
+
+        a:hover {
+            color: cyan;
+        }
+
+        a::before {
+            content: "";
+            display: block;
+            height: 3px;
+            width: 0%;
+            top: 25px;
+            background-color: #61dafb;
+            position: absolute;
+            transition: all ease-in-out 250ms;
+            margin: 0 0 0 10%;
+        }
+
+        a:hover::before {
+            width: 80%;
+        }
+    }
 }
